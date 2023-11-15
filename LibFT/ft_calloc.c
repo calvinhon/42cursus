@@ -4,11 +4,8 @@ void    *ft_calloc(size_t nmemb, size_t size)
 {
     void    *ptr;
     
-    ptr = NULL;
-    if (nmemb > SIZE_MAX / size)
-        return(ptr);
-    if (nmemb * size == 0)
-        return((void *)"");
+    if (nmemb > SIZE_MAX / size || nmemb <= 0 || size <= 0)
+        return(NULL);
     ptr = malloc(nmemb * size);
     if (ptr == NULL)
         return(NULL);
