@@ -1,9 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: chon <chon@student.42.fr>                  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/16 13:41:43 by chon              #+#    #+#             */
+/*   Updated: 2023/11/16 13:41:43 by chon             ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 #define LIBFT_H
 
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include <limits.h>
+#include <stdio.h>
 
 int     ft_atoi(const char *str);
 void    ft_bzero(void *s, size_t n);
@@ -33,6 +47,7 @@ size_t  ft_strlcpy(char *dest, const char *src, size_t size);
 int     ft_strncmp(const char *s1, const char *s2, size_t n);
 char    *ft_strnstr(const char *haystack, const char *needle, size_t n);
 char    *ft_strrchr(const char *s, int c);
+char    *ft_strtrim(char const *s1, char const *set);
 char    *ft_substr(char const *s, unsigned int start, size_t len);
 int     ft_tolower(int c);
 int     ft_toupper(int c);

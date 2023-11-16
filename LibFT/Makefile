@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: chon <chon@student.42.fr>                  +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/11/16 13:41:50 by chon              #+#    #+#              #
+#    Updated: 2023/11/16 13:41:50 by chon             ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
@@ -8,6 +20,7 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strle
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJS)
+# $(CC) $(OBJS) -o $(NAME)
 	ar -rcs $(NAME) $(OBJS)
 
 all: $(NAME)
