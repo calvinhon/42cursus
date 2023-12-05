@@ -6,7 +6,7 @@
 /*   By: chon <chon@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 13:41:10 by chon              #+#    #+#             */
-/*   Updated: 2023/11/16 13:41:11 by chon             ###   ########.fr       */
+/*   Updated: 2023/12/05 14:49:29 by chon             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char *str;
-	int i;
+	char	*str;
+	int		i;
 
 	str = malloc((ft_strlen(s1) + ft_strlen(s2)) * sizeof(char) + 1);
 	if (str == NULL)

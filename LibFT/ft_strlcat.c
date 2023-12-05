@@ -6,7 +6,7 @@
 /*   By: chon <chon@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 13:41:12 by chon              #+#    #+#             */
-/*   Updated: 2023/11/16 13:41:12 by chon             ###   ########.fr       */
+/*   Updated: 2023/12/05 14:49:19 by chon             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	size_t dest_len;
-	size_t src_len;
+	size_t	dest_len;
+	size_t	src_len;
 
 	dest_len = ft_strlen(dest);
 	src_len = ft_strlen(src);

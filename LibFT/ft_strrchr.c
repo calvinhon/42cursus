@@ -6,7 +6,7 @@
 /*   By: chon <chon@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 13:41:28 by chon              #+#    #+#             */
-/*   Updated: 2023/11/16 13:41:28 by chon             ###   ########.fr       */
+/*   Updated: 2023/12/05 14:31:43 by chon             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int s_len;
+	int	s_len;
 
 	s_len = ft_strlen(s);
 	s += s_len;

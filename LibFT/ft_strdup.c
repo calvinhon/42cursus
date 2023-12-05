@@ -6,7 +6,7 @@
 /*   By: chon <chon@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 13:41:05 by chon              #+#    #+#             */
-/*   Updated: 2023/11/16 13:41:05 by chon             ###   ########.fr       */
+/*   Updated: 2023/12/05 15:19:12 by chon             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strdup(const char *s)
 {
-	char *dest;
-	int len;
-	int i;
+	char	*dest;
+	int		len;
+	int		i;
 
 	len = 0;
 	while (s[len])

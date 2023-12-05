@@ -6,7 +6,7 @@
 /*   By: chon <chon@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 13:41:34 by chon              #+#    #+#             */
-/*   Updated: 2023/11/16 13:41:35 by chon             ###   ########.fr       */
+/*   Updated: 2023/12/05 14:31:30 by chon             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char *substr;
+	char	*substr;
 
 	if (len > ft_strlen(s) - start)
 		len = ft_strlen(s) - start;

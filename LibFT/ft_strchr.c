@@ -6,7 +6,7 @@
 /*   By: chon <chon@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 13:41:02 by chon              #+#    #+#             */
-/*   Updated: 2023/11/16 13:41:02 by chon             ###   ########.fr       */
+/*   Updated: 2023/12/05 15:19:30 by chon             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	char *ptr;
+	char	*ptr;
 
 	ptr = (char *)s;
 	while (*ptr)
