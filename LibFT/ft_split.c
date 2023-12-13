@@ -6,7 +6,7 @@
 /*   By: chon <chon@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 13:33:36 by chon              #+#    #+#             */
-/*   Updated: 2023/12/05 17:56:17 by chon             ###   ########.fr       */
+/*   Updated: 2023/12/08 10:16:18 by chon             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,15 +58,3 @@ char	**ft_split(char const *s, char c)
 	array[i] = NULL;
 	return (array);
 }
-
-// int	main(void)
-// {
-// 	char **array = ft_split("Tripouille ", ' ');
-// 	int i = 0;
-
-// 	while (i < 4)
-// 	{
-// 		printf("%s;\n", array[i]);
-// 		i++;
-// 	}
-// }

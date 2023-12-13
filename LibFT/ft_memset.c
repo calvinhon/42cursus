@@ -6,7 +6,7 @@
 /*   By: chon <chon@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 13:40:45 by chon              #+#    #+#             */
-/*   Updated: 2023/11/16 13:40:45 by chon             ###   ########.fr       */
+/*   Updated: 2023/12/08 10:17:06 by chon             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	signed char *ptr;
+	signed char	*ptr;
 
 	ptr = s;
 	while (n > 0)

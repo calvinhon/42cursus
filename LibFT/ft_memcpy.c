@@ -6,7 +6,7 @@
 /*   By: chon <chon@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 13:40:41 by chon              #+#    #+#             */
-/*   Updated: 2023/11/16 13:40:41 by chon             ###   ########.fr       */
+/*   Updated: 2023/12/08 10:39:07 by chon             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	char *dest_ptr;
-	char *src_ptr;
+	char	*dest_ptr;
+	char	*src_ptr;
 
 	dest_ptr = (char *)dest;
 	src_ptr = (char *)src;

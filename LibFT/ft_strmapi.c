@@ -6,7 +6,7 @@
 /*   By: chon <chon@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 13:41:19 by chon              #+#    #+#             */
-/*   Updated: 2023/12/05 15:18:29 by chon             ###   ########.fr       */
+/*   Updated: 2023/12/08 11:47:35 by chon             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int		i;
-	char	*str;
+	unsigned int	i;
+	char			*str;
 
 	str = malloc(sizeof(char) * ft_strlen(s) + 1);
 	if (str == NULL)

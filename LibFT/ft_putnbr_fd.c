@@ -6,7 +6,7 @@
 /*   By: chon <chon@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 13:40:52 by chon              #+#    #+#             */
-/*   Updated: 2023/11/16 13:40:52 by chon             ###   ########.fr       */
+/*   Updated: 2023/12/08 10:16:47 by chon             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char *str;
+	char	*str;
 
 	str = ft_itoa(n);
 	ft_putstr_fd(str, fd);

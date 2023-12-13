@@ -6,7 +6,7 @@
 /*   By: chon <chon@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 13:40:33 by chon              #+#    #+#             */
-/*   Updated: 2023/11/16 13:40:33 by chon             ###   ########.fr       */
+/*   Updated: 2023/12/08 10:18:17 by chon             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ int	digits(int n)
 
 char	*ft_itoa(int n)
 {
-	char *str;
-	int i;
-	long num;
+	char	*str;
+	int		i;
+	long	num;
 
 	num = n;
 	i = digits(n);
