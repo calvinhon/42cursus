@@ -1,16 +1,23 @@
-#include "libft.h"
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: chon <chon@student.42.fr>                  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/08 10:34:49 by chon              #+#    #+#             */
+/*   Updated: 2023/12/08 10:34:50 by chon             ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-// int main(void)
+// int	main(void)
 // {
-//     unsigned char c = 'z';
-//     printf("%i\n", ft_isalpha(c));
-//     return(0);
-// }
+// 	char **array = ft_split("Tripouille ", ' ');
+// 	int i = 0;
 
-int main(int argc, char **argv)
-{
-    (void)argc;
-    printf("%i\n", ft_atoi(argv[1]));
-    return(0);
-}
+// 	while (i < 4)
+// 	{
+// 		printf("%s;\n", array[i]);
+// 		i++;
+// 	}
+// }
