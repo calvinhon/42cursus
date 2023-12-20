@@ -19,6 +19,8 @@ int	str_count(char const *s, char c)
 
 	i = 0;
 	count = 0;
+	// if (ft_strlen(s) < 1)
+	// 	return (1);
 	while (s[i])
 	{
 		while (s[i] == c && s[i])
@@ -39,6 +41,8 @@ char	**ft_split(char const *s, char c)
 	int		i;
 	int		j;
 
+	if (s == NULL)
+		return (NULL);
 	str_ct = str_count(s, c);
 	array = malloc((str_ct + 1) * sizeof(char *));
 	if (array == NULL)
@@ -56,5 +60,15 @@ char	**ft_split(char const *s, char c)
 		str_ct--;
 	}
 	array[i] = NULL;
+	// printf("str_ct:%i i:%i\n", str_ct, i);
 	return (array);
 }
+
+// int	main(void)
+// {
+// 	int i = 0;
+// 	char **tab = ft_split("", 'z');
+// 	// char **tab = ft_split("lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultricies diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.", '.');
+// 	// while (i < 10)
+// 	// 	printf("%s;\n", tab[i++]);
+// }

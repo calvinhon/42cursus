@@ -12,34 +12,50 @@
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s1, char const *set)
+int	trim_len(char const *s1, char const *set)
 {
 	int		count;
+	int		i;
+
+	count = 0;
+	i = 0;
+	while (s1[i] && ft_strchr(set, s1[i]) != NULL)
+	{
+		i++;
+		count++;
+	}
+	if (i == (int)ft_strlen(s1))
+		return (0);
+	i = ft_strlen(s1) - 1;
+	while (i > -1 && ft_strchr(set, s1[i]) != NULL)
+	{
+		i--;
+		count++;
+	}
+	return (ft_strlen(s1) - count);
+}
+
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	int		new_len;
 	int		i;
 	int		j;
 	char	*str;
 
-	count = 0;
+	new_len = trim_len(s1, set);
 	i = 0;
 	j = 0;
-	while (s1[i])
-		if (ft_strchr(set, s1[i++]) == NULL)
-			count++;
-	i = 0;
-	str = malloc(count * sizeof(char) + 1);
+	str = malloc(new_len * sizeof(char) + 1);
 	if (str == NULL)
 		return (NULL);
-	while (s1[i])
-	{
-		if (ft_strchr(set, s1[i]) == NULL)
-			str[j++] = *(s1 + i);
+	while (ft_strchr(set, s1[i]) != NULL)
 		i++;
+	while (new_len > 0)
+	{
+		str[j++] = *(s1 + i);
+		i++;
+		new_len--;
 	}
 	str[j] = '\0';
 	return (str);
 }
-
-// int main(void)
-// {
-//     printf("%s;\n", ft_strtrim("", ""));
-// }
