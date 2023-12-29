@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chon <chon@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/16 13:40:41 by chon              #+#    #+#             */
-/*   Updated: 2023/12/23 11:12:39 by chon             ###   ########.fr       */
+/*   Created: 2023/12/23 13:55:15 by chon              #+#    #+#             */
+/*   Updated: 2023/12/29 15:21:14 by chon             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
-{
-	char	*dest_ptr;
-	char	*src_ptr;
+# include <stdarg.h>
+# include <unistd.h>
+# include <stdlib.h>
+# include <stdio.h>
 
-	if (!dest && !src)
-		return (dest);
-	dest_ptr = (char *)dest;
-	src_ptr = (char *)src;
-	while (n > 0)
-	{
-		*dest_ptr++ = *src_ptr++;
-		n--;
-	}
-	return (dest);
-}
+int		ft_printf(const char *format, ...);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putnbr_base(int nbr, char *base);
+void	ft_putstr_fd(char *s, int fd);
+char	*ft_strchr(const char *s, int c);
+size_t	ft_strlen(const char *s);
+
+# endif

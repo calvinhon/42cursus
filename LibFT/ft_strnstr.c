@@ -6,7 +6,7 @@
 /*   By: chon <chon@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 13:41:26 by chon              #+#    #+#             */
-/*   Updated: 2023/12/05 14:48:10 by chon             ###   ########.fr       */
+/*   Updated: 2023/12/23 11:22:00 by chon             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,9 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 		return (0);
 	i = 0;
 	j = 0;
-	while (haystack[i + ft_strlen(needle) - 1] && n > 0)
+	if (n > ft_strlen(haystack))
+		n = ft_strlen(haystack);
+	while (haystack[i] && n > 0)
 	{
 		while (haystack[i + j] == needle[j] && n - j > 0)
 			j++;
@@ -35,8 +37,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 	}
 	return (NULL);
 }
-
-// int	main(void)
-// {
-// 	printf("%s\n", ft_strnstr("", "coucou", -1));
-// }

@@ -6,7 +6,7 @@
 /*   By: chon <chon@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 13:40:07 by chon              #+#    #+#             */
-/*   Updated: 2023/12/08 10:18:57 by chon             ###   ########.fr       */
+/*   Updated: 2023/12/23 12:45:54 by chon             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ void	ft_bzero(void *s, size_t n)
 	unsigned char	*p;
 
 	p = (unsigned char *)s;
-	if (!s)
-		return ;
 	while (n > 0)
 	{
 		*p = 0;

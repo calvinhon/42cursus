@@ -6,7 +6,7 @@
 /*   By: chon <chon@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 13:41:31 by chon              #+#    #+#             */
-/*   Updated: 2023/11/16 14:45:34 by chon             ###   ########.fr       */
+/*   Updated: 2023/12/23 11:46:17 by chon             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str = malloc(new_len * sizeof(char) + 1);
 	if (str == NULL)
 		return (NULL);
-	while (ft_strchr(set, s1[i]) != NULL)
+	while (ft_strchr(set, s1[i]) != NULL && s1[i])
 		i++;
 	while (new_len > 0)
 	{

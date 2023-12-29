@@ -28,7 +28,6 @@ ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 
 $(NAME): $(OBJS)
 	ar -rcs $(NAME) $(OBJS)
-# $(CC) $(OBJS) -o $(NAME)
 
 all: $(NAME)
 

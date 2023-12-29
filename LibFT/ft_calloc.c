@@ -6,7 +6,7 @@
 /*   By: chon <chon@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 13:33:33 by chon              #+#    #+#             */
-/*   Updated: 2023/11/16 13:33:33 by chon             ###   ########.fr       */
+/*   Updated: 2023/12/23 13:35:09 by chon             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(ptr, nmemb * size);
 	return (ptr);
 }
-
-// int main(void)
-// {
-//     ft_calloc(1, 1);
-// }
